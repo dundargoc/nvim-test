@@ -178,6 +178,7 @@ export NVIM_PRG=$NVIM_TEST/bin/nvim
 export NVIM_TEST_HOME
 
 echo "NVIM_RUNNER is $NVIM_RUNNER"
+ls $NVIM_RUNNER
 
 "$NVIM_RUNNER"/bin/nvim -ll \
   "$NVIM_TEST_HOME/lua/nvim-test/busted/runner.lua" \
