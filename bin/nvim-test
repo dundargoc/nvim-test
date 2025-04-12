@@ -8,13 +8,8 @@ NVIM_TEST_VERSION=${NVIM_TEST_VERSION:-v0.9.5}
 INIT_ONLY=
 LUACOV_ENABLED=
 
-
-if [ -n "$XDG_DATA_HOME" ]; then
-  DATA=${XDG_DATA_HOME}/nvim-test
-  echo "XDG_DATA_HOME is $XDG_DATA_HOME"
-  echo "DATA is: $DATA"
-else
-  DATA=~/AppData/Local/.data/nvim-test
+if [ -n "$CI" ]; then
+  DATA=$GITHUB_WORKSPACE/nvim-test
 fi
 
 echo "DATA is: $DATA"
