@@ -168,6 +168,7 @@ if [ $INIT_ONLY ]; then
 fi
 
 # eval "$($LUAROCKS path)"
+$LUAROCKS path
 
 export NVIM_PRG=$NVIM_TEST/bin/nvim
 export NVIM_TEST_HOME
