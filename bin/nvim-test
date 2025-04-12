@@ -11,7 +11,7 @@ LUACOV_ENABLED=
 DATA=${XDG_DATA_HOME-$HOME/.data}/nvim-test
 
 if [ -n "$GITHUB_WORKSPACE" ]; then
-  DATA=$GITHUB_WORKSPACE
+  DATA=$GITHUB_WORKSPACE/nvim-test
 fi
 
 export NVIM_TEST_DATA=DATA
