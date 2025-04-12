@@ -8,9 +8,9 @@ NVIM_TEST_VERSION=${NVIM_TEST_VERSION:-v0.9.5}
 INIT_ONLY=
 LUACOV_ENABLED=
 
-DATA=${XDG_DATA_HOME}/nvim-test
+DATA=${XDG_DATA_HOME-$HOME/.data}/nvim-test
 
-if [ -n "$CI" ]; then
+if [ -n "$GITHUB_WORKSPACE" ]; then
   DATA=$GITHUB_WORKSPACE
 fi
 
