@@ -14,7 +14,7 @@ if [ -n "$GITHUB_WORKSPACE" ]; then
   DATA=$GITHUB_WORKSPACE/nvim-test
 fi
 
-export NVIM_TEST_DATA=DATA
+export NVIM_TEST_DATA=$DATA
 
 mkdir -p "$DATA"
 
