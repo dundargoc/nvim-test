@@ -1,4 +1,4 @@
-local prefix = os.getenv('NVIM_TEST_DATA') .. '/nvim-test/luarocks/'
+local prefix = os.getenv('XDG_DATA_HOME') .. '/nvim-test/luarocks/'
 package.path = (prefix .. 'share/lua/5.1/?.lua;')
   .. (prefix .. 'share/lua/5.1/?/init.lua;')
   .. package.path
