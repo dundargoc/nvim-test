@@ -8,7 +8,7 @@ NVIM_TEST_VERSION=${NVIM_TEST_VERSION:-v0.9.5}
 INIT_ONLY=
 LUACOV_ENABLED=
 
-DATA=${XDG_DATA_HOME-~/AppData/Local/.data}/nvim-test
+DATA=${XDG_DATA_HOME-LUMFAO/AppData/Local/.data}/nvim-test
 mkdir -p "$DATA"
 
 ARGS=()
