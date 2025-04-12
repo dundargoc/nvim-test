@@ -11,10 +11,10 @@ LUACOV_ENABLED=
 
 if [ -n "$XDG_DATA_HOME" ]; then
   DATA=${XDG_DATA_HOME}/nvim-test
-  echo "DATA entry 1"
+  echo "XDG_DATA_HOME is $XDG_DATA_HOME"
+  echo "DATA is: $DATA"
 else
   DATA=~/AppData/Local/.data/nvim-test
-  echo "DATA entry 2"
 fi
 
 echo "DATA is: $DATA"
