@@ -14,7 +14,7 @@ if [ -n "$GITHUB_WORKSPACE" ]; then
   DATA=$GITHUB_WORKSPACE
 fi
 
-echo "DATA is: $DATA"
+export NVIM_TEST_DATA=DATA
 
 mkdir -p "$DATA"
 
