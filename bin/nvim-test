@@ -8,7 +8,15 @@ NVIM_TEST_VERSION=${NVIM_TEST_VERSION:-v0.9.5}
 INIT_ONLY=
 LUACOV_ENABLED=
 
-DATA=${XDG_DATA_HOME-LUMFAO/AppData/Local/.data}/nvim-test
+
+if [ -n "$XDG_DATA_HOME" ]; then
+  DATA=${XDG_DATA_HOME}/nvim-test
+else
+  DATA=~/AppData/Local/.data/nvim-test
+fi
+
+echo "DATA is: $DATA"
+
 mkdir -p "$DATA"
 
 ARGS=()
